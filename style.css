@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    background-color: #f7efe6;
+    color: #3b2a22;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #4a2e20;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav a:hover {
+    color: #ffd8a8;
+}
+nav a.selected_menu {
+    background-color: #b5723d;
+}
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+h2 {
+    color: #4a2e20;
+}
+p, li {
+    font-size: 18px;
+    line-height: 1.5;
+}
+img {
+    width: 350px;
+    max-width: 100%;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #e6d5c3;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #4a2e20;
+    color: white;
+    text-align: center;
+}
+
+/* ===== Форма обратной связи (ЛР4) ===== */
+form { max-width: 700px; }
+.row { display: flex; align-items: flex-start; margin-bottom: 15px; }
+.row > label:first-child, .row > .label { width: 200px; flex-shrink: 0; padding-top: 8px; font-size: 18px; }
+.row input[type="text"], .row input[type="email"], .row select, .row textarea, .row input[type="file"] {
+    flex: 1; min-width: 0; padding: 8px; font-family: inherit; font-size: 16px;
+    border: 1px solid #999; border-radius: 5px; background: white;
+}
+.row textarea { resize: vertical; }
+.group { display: flex; flex-direction: column; }
+label.inline { display: block; padding-top: 8px; font-size: 18px; }
+.btn {
+    display: inline-block; padding: 10px 24px; font-family: inherit; font-size: 18px;
+    color: white; background-color: #b5723d; border: none; border-radius: 5px;
+    text-decoration: none; cursor: pointer;
+}
+.btn:hover { background-color: #4a2e20; }
+textarea.answer {
+    display: block; width: 100%; max-width: 700px; margin-bottom: 15px; padding: 8px;
+    font-family: inherit; font-size: 16px; border: 1px solid #999; border-radius: 5px; background: white;
+}
+@media (max-width: 600px) {
+    .row { flex-direction: column; }
+    .row > label:first-child, .row > .label { width: auto; padding-top: 0; }
+}
